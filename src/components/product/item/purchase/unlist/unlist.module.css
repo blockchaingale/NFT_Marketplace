@@ -1,0 +1,144 @@
+.action {
+    margin: 25px 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    align-items: flex-start;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    gap: 35px;
+    max-width: 700px;
+}
+
+.dark.action {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.action>div>:first-child {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.20);
+    border: none;
+    padding: 8px 18px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.dark.action>div>:first-child {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.action>div>div {
+    margin: 15px 0;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    max-width: 410px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.action>div>div button {
+    border-radius: 14px;
+    background: rgba(255, 147, 147, 0.10);
+    border: 0;
+    padding: 16px 18px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.action>div>div button:hover {
+    background: rgba(255, 147, 147, 0.60);
+}
+
+.action>div>div button img {
+    width: 30px;
+}
+
+.action>div>div p {
+    color: rgba(233, 4, 4, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.input {
+    border-radius: 10px;
+    background: rgba(255, 147, 147, 0.10);
+    padding: 8px 18px;
+}
+
+.input>div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.input>div p {
+    color: #000 !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    align-self: center !important;
+}
+
+.dark .input>div p {
+    color: #fff !important;
+}
+
+.input>div input {
+    height: 32px;
+    width: calc(100% - 20px);
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark .input>div input {
+    color: #fff;
+}
+
+.input span {
+    color: rgba(233, 4, 4, 0.70);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.action>div>:last-child {
+    height: 45px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 10px 0 0 0;
+    max-width: 340px;
+}
+
+.action>div>:last-child:hover {
+    background-color: #fff;
+    color: #E90404;
+}
+
+@media only screen and (min-width: 550px) {
+    .action>div>div {
+        flex-wrap: nowrap;
+    }
+}

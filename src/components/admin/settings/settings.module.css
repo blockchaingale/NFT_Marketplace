@@ -1,0 +1,119 @@
+.settings h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.settings button {
+    height: 32px;
+    width: 70px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 6px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.settings button:hover {
+    background-color: #fff;
+    color: #E90404;
+}
+
+.settings label,
+.settings input {
+    display: block;
+}
+
+.settings label {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark.settings label {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.settings input {
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 1px solid #FFF4F4;
+    background: #FDE7E7;
+    padding: 0 10px;
+    height: 38px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    max-width: 350px;
+}
+
+.fees {
+    display: block;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 20px;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    margin-bottom: 40px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+.dark .fees {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.current {
+    border-radius: 5px;
+    background: rgba(255, 147, 147, 0.20);
+    width: max-content;
+    padding: 6px 8px;
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.current span {
+    color: #1B1B1B;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    margin: 2px 0;
+}
+
+.dark .current span {
+    color: #e8e8e8;
+}
+
+.dark form>div p {
+    color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+    .fees {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 887px) {
+    .settings h3 {
+        font-size: 28px;
+        grid-column: auto;
+    }
+    .fees {
+        column-gap: 60px;
+        row-gap: 0;
+    }
+}

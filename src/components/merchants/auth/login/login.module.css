@@ -1,0 +1,159 @@
+.login h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: #E90404;
+    text-align: center;
+}
+
+.login>p {
+    max-width: 450px;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 14px;
+}
+
+.login>div {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    max-width: 540px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.login>div a {
+    margin: 0 !important;
+}
+
+.login>div:last-child {
+    margin-top: 15px;
+}
+
+.login>div * {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.login>div a {
+    margin: 16px 0;
+    color: #4959cf;
+}
+
+.form {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form label,
+.form label input {
+    display: block;
+}
+
+.form label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.form label:first-child {
+    margin-bottom: 20px;
+}
+
+.form label input {
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #FFF4F4;
+    background: #FFF4F4;
+    width: 90%;
+    height: 41px;
+    padding-left: 10px;
+}
+
+.form label input:focus-visible {
+    outline: none;
+    background-color: aliceblue;
+}
+
+.form span {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(68, 70, 86, 0.50);
+}
+
+.form button {
+    height: 55px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 40px auto 40px auto;
+}
+
+.form button:hover {
+    background-color: #fff;
+    color: #E90404;
+}
+
+.dark.login>p {
+    color: #fff;
+}
+
+.dark.login>div p {
+    color: #fff;
+}
+
+.dark .form label {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.dark .form label input {
+    color: #fff;
+    background: transparent;
+}
+
+.dark .form span {
+    color: rgba(225, 226, 233, 0.5);
+}
+
+.dark .form button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+@media only screen and (min-width: 700px) {
+    .login h3 {
+        font-size: 40px;
+        margin: 15px 0 0 0;
+        line-height: 56px;
+    }
+    .form label input {
+        width: 100%;
+    }
+    .form {
+        margin-top: 40px;
+    }
+    .form button {
+        height: 43px;
+    }
+}

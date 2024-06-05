@@ -1,0 +1,115 @@
+.activity {
+    margin: 25px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    min-height: 150px;
+}
+
+.dark .activity {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.content {
+    padding: 15px 30px;
+    overflow-x: scroll;
+}
+
+.header {
+    border-bottom: 1px solid rgba(184, 0, 0, 0.10);
+    display: grid;
+    grid-template-columns: 80px 80px 300px 1fr;
+    align-items: center;
+    padding: 0 15px;
+    gap: 20px;
+    min-width: 900px;
+}
+
+.dark .header {
+    border-bottom: 1px solid rgba(184, 0, 0, 0.50);
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 80px 80px 300px 1fr;
+    align-items: center;
+    margin: 14px 0;
+    padding: 0 15px;
+    gap: 20px;
+    min-width: 900px;
+}
+
+.header p {
+    margin-top: 0;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dark .header p {
+    color: #fff;
+}
+
+.body> :first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header> :last-child,
+.body> :last-child {
+    justify-self: flex-end;
+}
+
+.dark .body> :last-child {
+    color: #fff;
+}
+
+.body> :first-child img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.body> :first-child> :first-child {
+    width: 12px;
+    height: 12px;
+}
+
+.body p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin: 0;
+}
+
+.dark .body p,
+.dark p {
+    color: #fff;
+}
+
+.paginationContainer {
+    margin: 25px 0;
+    padding-bottom: 15px;
+}
+
+.body a {
+    color: rgba(233, 4, 4, 0.70);
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media only screen and (min-width: 715px) {
+    .header {
+        grid-template-columns: 150px 150px 1.5fr 1fr;
+    }
+    .body {
+        grid-template-columns: 150px 150px 1.5fr 1fr;
+    }
+}

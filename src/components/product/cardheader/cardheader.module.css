@@ -1,0 +1,29 @@
+.header {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 25px;
+}
+
+.dark.header {
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.dark p {
+    color: #fff;
+}
+
+.header>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header>div img {
+    width: 22px;
+}
+
+.header>img {
+    width: 6px;
+}

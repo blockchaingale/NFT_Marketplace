@@ -1,0 +1,85 @@
+.graph {
+    margin: 80px 0 40px 0;
+}
+
+.graph>h3 {
+    color: #FFF;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.card> :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card> :first-child h4 {
+    color: #191B1C;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.dark.card> :first-child h4 {
+    color: #fff;
+}
+
+.card> :first-child p {
+    border-radius: 8px;
+    background: #FFF4F4;
+    color: #2d2d2d;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 8px 16px;
+    user-select: none;
+}
+
+.card {
+    position: relative;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    border-radius: 0;
+    background: transparent;
+    padding: 25px;
+    max-width: 850px;
+    margin-top: 50px;
+}
+
+.dark.card {
+    border: 1px solid #888;
+}
+
+.grid {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin: 40px 0;
+}
+
+@media only screen and (min-width: 531px) {
+    .card {
+        padding: 35px;
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        border-radius: 15px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

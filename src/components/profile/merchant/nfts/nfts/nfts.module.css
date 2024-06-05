@@ -1,0 +1,13 @@
+.nfts {
+    margin: 40px 0;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat( auto-fit, minmax(180px, 182px));
+}
+
+@media only screen and (min-width: 600px) {
+    .nfts {
+        grid-template-columns: repeat( auto-fit, minmax(190px, 192px));
+        gap: 10px;
+    }
+}

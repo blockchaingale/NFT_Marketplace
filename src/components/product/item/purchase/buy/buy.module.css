@@ -1,0 +1,164 @@
+.action {
+    margin: 25px 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    gap: 35px;
+}
+
+.dark.action {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.action>div>:first-child {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.20);
+    border: none;
+    padding: 8px 18px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.dark.action>div>:first-child {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.buy h3,
+.offer span {
+    color: #000 !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 12px;
+    text-align: left !important;
+}
+
+.dark .buy h3,
+.dark .offer span {
+    color: #fff !important;
+}
+
+.offer span {
+    font-size: 14px !important;
+}
+
+.buy h3 {
+    margin-bottom: 5px;
+}
+
+.action>div>:last-child {
+    height: 45px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+.action>div>:last-child:hover {
+    background-color: #fff;
+    color: #E90404;
+}
+
+.input {
+    border-radius: 10px;
+    background: rgba(255, 147, 147, 0.10);
+    padding: 8px 18px;
+    margin-bottom: -10px;
+}
+
+.input p {
+    margin: 0;
+}
+
+.counter {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px !important;
+}
+
+.counter p {
+    margin: 0;
+}
+
+.input>div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.input>div p {
+    color: #000 !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    align-self: center !important;
+}
+
+.dark .input>div p {
+    color: #fff !important;
+}
+
+.input>div input {
+    height: 32px;
+    width: calc(100% - 80px);
+    max-width: 300px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark .input>div input,
+.dark p {
+    color: #fff;
+}
+
+.input span {
+    color: rgba(233, 4, 4, 0.70);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media only screen and (min-width: 600px) {
+    .buy {
+        grid-template-columns: 0.6fr 1.5fr;
+    }
+    .action>div>:last-child {
+        height: 45px;
+        width: 200px;
+        margin: 40px 0 0 0;
+    }
+    .action {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 5px;
+        max-width: 700px;
+    }
+    .action> :last-child {
+        justify-self: flex-end;
+    }
+    .buy h3 {
+        font-size: 30px !important;
+    }
+}

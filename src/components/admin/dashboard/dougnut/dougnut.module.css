@@ -1,0 +1,29 @@
+.doughnut {
+    margin-top: 25px;
+    position: relative;
+    height: 270px;
+    width: 320px;
+    border-radius: 0;
+}
+
+.doughnut>h4 {
+    color: #2A3547;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 21.6px */
+    margin: 0;
+}
+
+.dark.doughnut>h4 {
+    color: #fff;
+}
+
+@media only screen and (min-width: 531px) {
+    .doughnut {
+        width: 320px;
+        height: 270px;
+        margin: 30px auto;
+    }
+}

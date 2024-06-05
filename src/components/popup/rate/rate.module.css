@@ -1,0 +1,315 @@
+.overlay {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.30) 100%);
+    backdrop-filter: blur(15px);
+    z-index: 41;
+    left: auto;
+    right: -200%;
+    transition: all 500ms ease-in-out;
+    top: 0;
+    display: none;
+}
+
+.soverlay {
+    display: block !important;
+    right: 0 !important;
+}
+
+.checkout> :last-child {
+    display: none;
+}
+
+.checkout {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    max-width: 370px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 5px 15px;
+    z-index: 12;
+}
+
+.checkout> :nth-child(3)::-webkit-scrollbar {
+    display: none;
+}
+
+.checkout h2 {
+    color: #000000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0 0 0;
+}
+
+.checkout>p {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 10px 0;
+    /* 137.5% */
+}
+
+.checkout> :nth-child(3) {
+    border-radius: 20px;
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    justify-items: flex-end;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.card>:first-child,
+.card> :nth-child(2) {
+    justify-self: flex-start;
+}
+
+.card>:first-child {
+    width: 60px;
+    border-radius: 15px;
+}
+
+.card> :nth-child(2) p {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.card> :nth-child(2) span {
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card>p {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.checkout textarea {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    padding: 3px;
+    border-radius: 5px;
+    border-color: rgba(233, 4, 4, 0.1);
+}
+
+.card> :last-child {
+    border-radius: 100px;
+    background: #35273A;
+    padding: 8px;
+    width: 12px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.card> :last-child:hover {
+    background: #3C2B42;
+}
+
+.button {
+    margin: 25px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.button> :first-child {
+    border-radius: 10px;
+    background: #DADADA;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    padding: 12px 52px;
+    cursor: pointer;
+    border: 2px solid #DADADA;
+    transition: all 300ms ease-in-out;
+}
+
+.button> :first-child:hover {
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.button> :last-child {
+    border-radius: 10px;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    padding: 12px 52px;
+    cursor: pointer;
+    border: 2px solid #ff0000;
+    transition: all 300ms ease-in-out;
+}
+
+.button> :last-child:hover {
+    background: transparent;
+    color: rgb(255, 0, 0);
+}
+
+.checkout> :nth-child(3) form label {
+    display: block;
+    color: rgba(233, 4, 4, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 20px 0;
+}
+
+.checkout> :nth-child(3) form div {
+    border-radius: 5px;
+    background: rgba(255, 147, 147, 0.10);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+
+.checkout> :nth-child(3) form input {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 45px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    background-color: transparent;
+    border: none;
+}
+
+.dark .checkout> :nth-child(3) form input {
+    color: #fff;
+}
+
+.checkout> :nth-child(3) form img {
+    width: 16px;
+}
+
+.checkout> :nth-child(3) form p {
+    margin: 0;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.fees>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fees div p {
+    color: rgba(233, 4, 4, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fees div span {
+    color: rgba(233, 4, 4, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fees>p {
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark.overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.70) 100%);
+}
+
+.dark .checkout {
+    background: #000;
+}
+
+.dark .fees p {
+    color: #c4c4c4;
+}
+
+.dark .checkout h2 {
+    color: #fff;
+}
+
+.dark .checkout>p {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.dark .checkout> :nth-child(3) {
+    background: #111111;
+}
+
+.dark .card> :nth-child(2) p,
+.dark .card>p {
+    color: #fff;
+}
+
+@media only screen and (min-width: 650px) {
+    .checkout {
+        max-width: 420px;
+        padding: 15px 40px;
+        height: 90vh;
+        top: 20px;
+        right: 20px;
+        border-radius: 12px;
+    }
+    .checkout> :last-child {
+        display: block;
+        position: fixed;
+        top: 52px;
+        right: 580px;
+        background: rgba(255, 0, 0, 0.2);
+        padding: 12px;
+        width: 20px;
+        border-radius: 150px;
+        z-index: 12;
+        cursor: pointer;
+        transition: all 500ms ease-in-out;
+    }
+    .checkout> :last-child:hover {
+        background: rgba(255, 0, 0, 0.5);
+    }
+    .checkout> :nth-child(3) {
+        border-radius: 20px;
+        padding: 15px;
+        overflow-y: scroll;
+    }
+}

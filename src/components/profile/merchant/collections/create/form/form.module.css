@@ -1,0 +1,386 @@
+.profile {
+    margin-top: 40px;
+}
+
+.image {
+    margin-bottom: 25px;
+}
+
+.image p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.224px;
+    margin: 0;
+}
+
+.dark .image p {
+    color: #fff;
+}
+
+.main {
+    margin: 20px 0;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px dashed #000;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    max-width: 308px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dark .main {
+    border: 1px dashed #fff;
+}
+
+.main>div {
+    opacity: 0;
+}
+
+.main>div input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.main img {
+    position: absolute;
+    width: 30px;
+    z-index: -2;
+    cursor: pointer;
+}
+
+.selected {
+    position: absolute;
+    width: 100% !important;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profile h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.form {
+    max-width: 450px;
+    margin: 30px auto;
+}
+
+.form label,
+.form label input {
+    display: block;
+}
+
+.form label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.50);
+    margin-bottom: 20px;
+}
+
+.dark .form label {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.form label input {
+    position: relative;
+    z-index: 1;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #FFF4F4;
+    background: #FFF4F4;
+    width: 90%;
+    height: 41px;
+    padding-left: 10px;
+}
+
+.dark .form label input {
+    background: transparent;
+    color: #fff;
+}
+
+.form textarea {
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #FFF4F4;
+    background: #FFF4F4;
+    display: block;
+    width: 90%;
+    padding: 10px;
+}
+
+.form label input:focus-visible {
+    outline: none;
+}
+
+.form span {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(68, 70, 86, 0.50);
+}
+
+.dark .form span {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(68, 70, 86, 1);
+    font-weight: 500;
+}
+
+.dark .editor div {
+    background-color: #000 !important;
+}
+
+.image span {
+    color: #000;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.form>button,
+.placer button {
+    height: 55px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 40px 0;
+}
+
+.main button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    cursor: pointer;
+    height: 100% !important;
+    margin: 0 !important;
+}
+
+.form button:hover {
+    background-color: #fff;
+    color: #E90404;
+}
+
+.upload {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.drop>div>div {
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+.upload input {
+    background: transparent !important;
+}
+
+.upload img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 500px;
+}
+
+.cat {
+    margin-top: 30px;
+    border-top: 2px solid #FFF4F4;
+}
+
+.traits>p,
+.purchase>p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark .traits>p,
+.dark .purchase>p {
+    color: #fff;
+}
+
+.traits,
+.purchase {
+    margin: 50px 0;
+}
+
+.placer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.placer button {
+    margin: 0;
+    background-color: #e6e6e6;
+    border: none;
+    color: #000;
+    height: 38px;
+    width: 100px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 15px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px dashed #000;
+    padding: 0 15px;
+    margin: 15px 0;
+}
+
+.card img {
+    width: 15px;
+    cursor: pointer;
+}
+
+.card p {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark .card p {
+    color: #fff;
+}
+
+.purchase>div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.purchase>div>div {
+    border-radius: 10px;
+    border: 1px dashed #000;
+    padding: 15px;
+    width: 227px;
+    height: 152px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dark .purchase>div>div {
+    border: 1px dashed #fff;
+}
+
+.dark input {
+    color: white !important;
+}
+
+.purchase>div>div:hover,
+.active {
+    background: rgba(255, 147, 147, 0.10);
+}
+
+.dark .purchase>div>div:hover,
+.dark .active {
+    background: transparent;
+    border: 1px dashed #E90404 !important;
+    color: red !important;
+}
+
+.dark .active *,
+.dark .purchase>div>div:hover {
+    color: red !important;
+}
+
+.purchase>div>div p {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dark .purchase>div>div p {
+    color: #fff;
+}
+
+.purchase>div>div span {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark .purchase>div>div span {
+    color: #fff;
+}
+
+.editor>* {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+@media only screen and (min-width: 700px) {
+    .editor>* {
+        position: relative;
+        width: 700px;
+        height: 400px;
+    }
+    .login h3 {
+        font-size: 45px;
+        margin: 15px 0 0 0;
+        line-height: 56px;
+    }
+    .form label input,
+    .form textarea {
+        width: 100%;
+    }
+    .form {
+        margin-top: 40px;
+    }
+    .form button {
+        height: 43px;
+    }
+    .form {
+        margin: 30px auto 0 0;
+    }
+    .purchase>div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

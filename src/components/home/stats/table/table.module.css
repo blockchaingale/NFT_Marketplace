@@ -1,0 +1,91 @@
+.table {
+    overflow-x: scroll;
+}
+
+.header {
+    border-bottom: 1px solid rgba(184, 0, 0, 0.10);
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    align-items: center;
+    min-width: 380px;
+}
+
+.dark .header {
+    border-bottom: 1px solid rgba(184, 0, 0, 0.5);
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    align-items: center;
+    margin: 10px 0;
+    min-width: 380px;
+    cursor: pointer;
+}
+
+.header> :last-child,
+.header> :nth-child(2),
+.body> :last-child,
+.body>:nth-child(2) {
+    justify-self: flex-end;
+}
+
+.body> :first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.body> :nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: flex-end;
+}
+
+.body> :first-child img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.body> :first-child> :last-child {
+    width: 12px;
+    height: 12px;
+}
+
+.body p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.224px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.dark .body p {
+    color: #fff;
+}
+
+.body span {
+    color: #E90404;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: right;
+    justify-self: flex-end;
+}
+
+.dark .body span {
+    color: #cd6342;
+}
+
+@media only screen and (min-width: 500px) {
+    .body p {
+        color: #000;
+        font-size: 14px;
+    }
+}

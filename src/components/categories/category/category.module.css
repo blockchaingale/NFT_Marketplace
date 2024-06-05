@@ -1,0 +1,33 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.paginationContainer {
+    margin: 25px 0;
+    padding-bottom: 15px;
+}
+
+.slider {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 600px) {
+    .section h3 {
+        font-size: 28px;
+    }
+    .slider {
+        gap: 10px;
+    }
+}

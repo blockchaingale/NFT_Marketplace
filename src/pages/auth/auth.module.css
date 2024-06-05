@@ -1,0 +1,21 @@
+.container>div {
+    margin: 0 auto;
+    margin-top: 35px;
+    min-height: 600px;
+    max-width: 850px;
+}
+
+.auth {
+    padding: 30px;
+}
+
+@media only screen and (min-width: 700px) {
+    .auth {
+        padding: 50px;
+    }
+    .container>div {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {}

@@ -1,0 +1,163 @@
+.verify h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 56px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: #E90404;
+}
+
+.verify h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 44px;
+    color: #03ab00;
+    margin: 0;
+}
+
+.verify h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 44px;
+    color: #cfbb00;
+    margin: 0;
+}
+
+.verify h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 44px;
+    color: #cf0000;
+    margin: 0;
+}
+
+.verify>div {
+    display: flex;
+    gap: 5px;
+}
+
+.verify>div :last-child {
+    font-weight: 700;
+    color: #4959cf;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form label,
+.form label input {
+    display: block;
+}
+
+.form label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444656;
+}
+
+.form label:first-child {
+    margin-bottom: 20px;
+}
+
+.form label input {
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #FFF4F4;
+    background: #FFF4F4;
+    width: 100%;
+    height: 41px;
+    padding-left: 10px;
+}
+
+.form>label input,
+.form>div>label input {
+    width: 90%;
+}
+
+.form label input:focus-visible {
+    outline: none;
+    background-color: aliceblue;
+}
+
+.form span {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(68, 70, 86, 0.5);
+}
+
+.form button {
+    height: 55px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 40px 0 40px 0;
+}
+
+.form button:hover {
+    background-color: #fff;
+    color: #E90404;
+}
+
+.dark.verify>p {
+    color: #fff;
+}
+
+.dark.verify>div p {
+    color: #fff;
+}
+
+.dark .form label {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.dark .form label input {
+    color: #fff;
+    background: transparent;
+}
+
+.dark .form span {
+    color: rgba(225, 226, 233, 0.5);
+}
+
+.dark .form button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+@media only screen and (min-width: 700px) {
+    .login h3 {
+        font-size: 45px;
+        margin: 15px 0 0 0;
+    }
+    .form label input {
+        width: 50%;
+    }
+    .form {
+        margin-top: 40px;
+    }
+    .form button {
+        height: 43px;
+    }
+    .login>p {
+        width: 70%;
+    }
+}

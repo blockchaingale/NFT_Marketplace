@@ -1,0 +1,48 @@
+.buy {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 45px;
+    gap: 10px;
+    width: 100%;
+}
+
+.buy>div {
+    grid-column: 1/2;
+}
+
+.dark .carousel .control-arrow,
+.dark .carousel.carousel-slider .control-arrow {
+    background: rgb(0, 0, 0) !important;
+    opacity: 1 !important;
+}
+
+@media only screen and (min-width: 1100px) {
+    .buy {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 20px;
+    }
+    .buy>:first-child {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .buy>:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .buy>:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+    .buy>:nth-child(4) {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .buy>:nth-child(5) {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .buy>:nth-child(6) {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+}

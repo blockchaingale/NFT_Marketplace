@@ -1,0 +1,32 @@
+.section {
+    margin: 60px 0;
+}
+
+.slider {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.section h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+        width: 220px;
+    }
+    .slider {
+        gap: 10px;
+    }
+    .dets div h5 {
+        font-size: 14px;
+    }
+    .section h3 {
+        font-size: 28px;
+    }
+}

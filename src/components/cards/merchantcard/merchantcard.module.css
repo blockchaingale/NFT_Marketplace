@@ -1,0 +1,145 @@
+.card {
+    max-width: 180px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    border-radius: 10px;
+    background-position: center;
+    cursor: pointer;
+    height: max-content;
+}
+
+.card .overlay> :first-child {
+    border: 3px solid transparent !important;
+    transition: all 300ms ease-in-out;
+}
+
+.card:hover .overlay> :first-child {
+    border: 3px solid #e90404a1 !important;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+}
+
+.dark.overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay> :first-child {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.overlay> :nth-child(2) {
+    padding: 10px;
+}
+
+.top {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.top p {
+    margin: 0;
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dark .top p {
+    color: #fff;
+}
+
+.top img {
+    width: 13px;
+}
+
+.dets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dets>:last-child {
+    justify-self: flex-end;
+    text-align: right;
+}
+
+.dets div h5 {
+    color: rgba(184, 0, 0, 0.80);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px 0;
+}
+
+.dark .dets div h5 {
+    color: #cd6342;
+}
+
+.dets div p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.dark .dets div p {
+    color: #fff;
+}
+
+.dets div span {
+    color: rgba(184, 0, 0, 0.80);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dark div span {
+    color: #cd6342;
+}
+
+@media only screen and (min-width: 400px) {
+    .card {
+        max-width: 185px;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .card {
+        min-width: 210px;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .card {
+        min-width: 235px;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+        min-width: 191px;
+    }
+    .dets div h5 {
+        font-size: 14px;
+    }
+}

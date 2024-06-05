@@ -1,0 +1,46 @@
+.categories {
+    display: none;
+    margin: 20px auto 2px auto;
+    max-width: 1380px;
+}
+
+.categories>div {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    min-width: 750px;
+}
+
+.categories a {
+    padding: 10px 13px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.categories a:hover {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.active {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+@media only screen and (min-width: 800px) {
+    .categories {
+        display: block;
+    }
+}

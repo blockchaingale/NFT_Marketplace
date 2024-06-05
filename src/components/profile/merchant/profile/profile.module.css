@@ -1,0 +1,13 @@
+.profile>h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media only screen and (min-width: 843px) {
+    .profile>h3 {
+        font-size: 28px;
+    }
+}

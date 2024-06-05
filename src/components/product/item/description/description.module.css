@@ -1,0 +1,66 @@
+.description {
+    max-width: 760px;
+    margin: 25px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    min-height: 150px;
+    height: max-content;
+}
+
+.dark.description {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.content {
+    padding: 15px 30px;
+}
+
+.content>p,
+.content>p * {
+    color: #000 !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    margin-top: 5px !important;
+    font-family: 'Mulish', sans-serif !important;
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.dark .content>p,
+.dark strong,
+.dark .content>p * {
+    color: #fff !important;
+}
+
+.content div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content div p {
+    color: rgba(233, 4, 4, 0.70);
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 14px 0;
+    text-transform: capitalize;
+}
+
+.content div span {
+    color: rgba(233, 4, 4, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dark .content div p,
+.dark .content div span {
+    color: rgb(253, 215, 215) !important;
+}

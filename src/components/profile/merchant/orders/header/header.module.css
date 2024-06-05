@@ -1,0 +1,239 @@
+.top {
+    display: grid;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.top h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.search {
+    border-radius: 10px;
+    background: rgba(255, 147, 147, 0.10);
+    backdrop-filter: blur(75px);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.search:hover {
+    background: rgba(255, 147, 147, 0.30);
+}
+
+.search img {
+    width: 20px;
+}
+
+.search input {
+    padding: 12px 0;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    background-color: transparent;
+    padding-left: 10px;
+    border: none;
+    color: rgba(233, 4, 4, 0.80);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.search input::placeholder {
+    color: rgba(233, 4, 4, 0.50);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.filter {
+    display: none;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.filter button {
+    height: 45px;
+    border-radius: 10px;
+    background: #FFF4F4;
+    border: none;
+    padding: 0 18px;
+    color: rgba(233, 4, 4, 0.50);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    /* 185.714% */
+}
+
+.active,
+.filter button:hover {
+    background: #FFF !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+}
+
+.status>div,
+.price>div {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.status>div {
+    flex-wrap: wrap;
+}
+
+.price>div {
+    max-width: 160px;
+}
+
+.price input {
+    height: 45px;
+    border-radius: 10px;
+    background: #FFF4F4;
+    border: none;
+    padding: 0 10px;
+}
+
+.price input {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    padding-left: 10px;
+    border: none;
+    color: rgba(233, 4, 4, 0.80);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.price input::placeholder {
+    color: rgba(233, 4, 4, 0.50);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(233, 4, 4, 0.10);
+    cursor: pointer;
+    padding: 15px 0;
+    user-select: none;
+    margin: 15px 10px;
+}
+
+.tog {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.tog img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.tog p {
+    color: #00fff0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.show {
+    display: grid !important;
+}
+
+.dark .active,
+.dark .filter button:hover {
+    background: rgba(255, 147, 147, 0.20) !important;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0) !important;
+}
+
+.dark .filter button {
+    background: transparent;
+    color: #FFF;
+}
+
+.dark .status>p {
+    color: #FFF;
+}
+
+@media only screen and (min-width: 450px) {
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .filter {
+        grid-template-columns: max-content 1fr;
+        gap: 25px;
+    }
+    .status {
+        grid-column: 1/3;
+    }
+    .filter> :last-child {
+        justify-self: flex-end;
+        grid-column: 2/3;
+    }
+}
+
+@media only screen and (min-width: 843px) {
+    .item {
+        display: none;
+    }
+    .top h3 {
+        font-size: 28px;
+    }
+    .search input {
+        width: 300px;
+    }
+    .top {
+        margin-top: 0;
+    }
+    .filter {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        align-items: flex-end;
+        gap: 25px;
+    }
+    .filter> :last-child {
+        justify-self: flex-end;
+        grid-column: 1/3;
+    }
+    .status {
+        grid-column: auto;
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+    .filter {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        align-items: flex-end;
+        gap: 25px;
+    }
+    .filter> :last-child {
+        justify-self: flex-end;
+        grid-column: auto;
+    }
+}

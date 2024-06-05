@@ -1,0 +1,13 @@
+.nfts {
+    margin: 40px 0;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 600px) {
+    .nfts {
+        display: flex;
+        gap: 10px;
+    }
+}

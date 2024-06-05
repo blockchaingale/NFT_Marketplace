@@ -1,0 +1,120 @@
+.reviews {
+    max-width: 760px;
+    margin: 25px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    height: fit-content;
+}
+
+.dark.reviews {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.content {
+    padding: 15px 30px;
+}
+
+.paginationContainer {
+    margin: 25px 0;
+    padding-bottom: 15px;
+}
+
+.header {
+    border-bottom: 1px solid rgba(184, 0, 0, 0.10);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+.idark .header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.header p {
+    margin-top: 0;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark .header p {
+    color: #fff;
+}
+
+.header> :last-child,
+.header> :nth-child(3),
+.body> :last-child,
+.body>:nth-child(3) {
+    justify-self: flex-end;
+}
+
+.header> :nth-child(3),
+.body> :nth-child(3) {
+    display: none;
+}
+
+.dark .body> :last-child {
+    color: #fff;
+}
+
+.body> :first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.body> :first-child img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.body> :first-child> :last-child {
+    width: 12px;
+    height: 12px;
+}
+
+.body p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.224px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.dark .body p {
+    color: #fff;
+}
+
+.body> :last-child,
+.header> :last-child {
+    display: none;
+}
+
+@media only screen and (min-width: 500px) {
+    .header {
+        grid-template-columns: 120px 1fr 120px 120px;
+    }
+    .body {
+        grid-template-columns: 120px 1fr 120px 120px;
+    }
+    .header> :nth-child(3),
+    .body> :nth-child(3),
+    .body> :last-child,
+    .header> :last-child {
+        display: block;
+    }
+}

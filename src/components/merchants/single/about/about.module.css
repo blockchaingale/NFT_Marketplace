@@ -1,0 +1,103 @@
+.about {
+    width: 95%;
+    max-width: 1400px;
+    margin: 27px auto;
+}
+
+.about h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.about h5 {
+    color: #D50000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.front>div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.front img {
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.business>div {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: center;
+}
+
+.business p {
+    color: #E90404;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.224px;
+}
+
+.business span {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.224px;
+}
+
+.dark .business span {
+    color: #fff;
+}
+
+.business a {
+    display: block;
+    color: #E90404;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.224px;
+    margin-top: 15px;
+}
+
+.shipping p,
+.shipping p *,
+.refund p,
+.refund p * {
+    color: #000 !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: justify;
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.dark .shipping p,
+.dark .refund p {
+    color: #fff !important;
+}
+
+@media only screen and (min-width: 800px) {
+    .about {
+        margin-top: 44px;
+    }
+    .about h3 {
+        font-size: 28px;
+    }
+}

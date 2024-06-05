@@ -1,0 +1,155 @@
+.profile {
+    margin-top: 40px;
+}
+
+.profile h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.form {
+    max-width: 450px;
+    margin: 30px auto;
+}
+
+.nobg input {
+    background: transparent !important;
+    border: none !important;
+}
+
+.form label,
+.form label input {
+    display: block;
+}
+
+.form label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.50);
+    margin-bottom: 20px;
+}
+
+.dark .form label {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.form label input {
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #FFF4F4;
+    background: #FFF4F4;
+    width: 90%;
+    height: 41px;
+    padding-left: 10px;
+}
+
+.form textarea {
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #FFF4F4;
+    background: #FFF4F4;
+    display: block;
+    width: 90%;
+    padding: 10px 0 0 10px;
+}
+
+.dark .form textarea,
+.dark .form label input {
+    background: transparent;
+    color: #fff;
+}
+
+.form label input:focus-visible {
+    outline: none;
+}
+
+.form span {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(68, 70, 86, 0.50);
+}
+
+.dark .form span {
+    color: rgba(68, 70, 86, 0.80);
+}
+
+.form>button {
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 40px 0;
+}
+
+.form button:hover {
+    background-color: #fff;
+    color: #E90404;
+}
+
+.dark .form button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.upload {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.upload input {
+    background: transparent !important;
+    border: none !important;
+}
+
+.upload img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 500px;
+}
+
+.cat {
+    margin-top: 30px;
+    border-top: 2px solid #FFF4F4;
+}
+
+.dark .editor div {
+    background-color: #000 !important;
+}
+
+@media only screen and (min-width: 700px) {
+    .login h3 {
+        font-size: 45px;
+        margin: 15px 0 0 0;
+        line-height: 56px;
+    }
+    .form label input,
+    .form textarea {
+        width: 100%;
+    }
+    .form {
+        margin-top: 40px;
+    }
+    .form {
+        margin: 30px auto 0 0;
+    }
+}

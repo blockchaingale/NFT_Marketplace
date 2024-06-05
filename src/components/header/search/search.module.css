@@ -1,0 +1,119 @@
+.container {
+    position: relative;
+}
+
+.search {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+    min-width: 300px;
+}
+
+.container> :last-child {
+    position: absolute;
+    padding: 10px 20px;
+    top: 50px;
+    background: rgba(0, 0, 0, .8);
+    box-shadow: 0px 4px 4px 0px rgba(148, 66, 66, 0.5);
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    z-index: 10;
+    display: none;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.container> :last-child li {
+    list-style: none;
+    color: #ffffff89;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    font-family: Montserrat;
+    /* 153.333% */
+}
+
+.container> :last-child li:hover {
+    color: #FFF;
+}
+
+.container> :last-child div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container> :last-child img {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.active {
+    display: block !important;
+}
+
+.search:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.search img {
+    width: 20px;
+}
+
+.search input {
+    padding: 12px 0;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    background-color: transparent;
+    padding-left: 10px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.search input::placeholder {
+    color: #ffffff95;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mob {
+    background: rgba(120, 120, 120, 0.25) !important;
+}
+
+.mob input {
+    background: transparent !important;
+}
+
+.mob input::placeholder {
+    color: #535353;
+}
+
+.dark .mob input::placeholder {
+    color: #b6b6b6;
+}
+
+.mob input {
+    color: black;
+}
+
+.dark .mob input {
+    color: rgb(255, 255, 255);
+}

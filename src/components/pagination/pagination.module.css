@@ -1,0 +1,9 @@
+.paginationContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.paginationContainer *,
+.paginationContainer button {
+    color: white;
+}

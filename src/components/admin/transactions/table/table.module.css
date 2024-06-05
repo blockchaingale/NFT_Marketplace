@@ -1,0 +1,110 @@
+.activity {
+    margin: 25px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    min-height: 150px;
+}
+
+.content {
+    overflow-x: scroll;
+    margin-top: 25px;
+}
+
+.content> :nth-child(odd) {
+    background: #F8F9F9;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 80px 120px 1.5fr 1fr 1.5fr;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 20px;
+    min-width: 760px;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 80px 120px 1.5fr 1fr 1.5fr;
+    align-items: center;
+    margin: 14px 0;
+    padding: 10px 15px;
+    gap: 20px;
+    min-width: 760px;
+}
+
+.paginationContainer {
+    margin: 25px 0;
+    padding-bottom: 15px;
+}
+
+.header p {
+    margin: 5px 0;
+    color: #4A5154;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.body> :first-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header> :last-child,
+.body> :last-child {
+    justify-self: flex-end;
+    font-size: 12px;
+}
+
+.body> :first-child img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.body> :first-child> :first-child {
+    width: 12px;
+    height: 12px;
+}
+
+.body p {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin: 0;
+}
+
+.body span,
+.body a {
+    color: rgba(233, 4, 4, 0.70);
+    font-family: Mulish;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark.content> :nth-child(odd) {
+    background: #212121 !important;
+}
+
+.dark .header>p,
+.dark .body> :last-child {
+    color: #c8c8c8 !important;
+}
+
+.dark .body p {
+    color: #a1a1a1;
+}
+
+.dark .body span {
+    color: #cecece;
+}
+
+@media only screen and (min-width: 715px) {}

@@ -1,0 +1,18 @@
+.nfts {
+    margin: 40px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.paginationContainer {
+    margin: 25px 0;
+    padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    .nfts {
+        display: flex;
+        gap: 10px;
+    }
+}
